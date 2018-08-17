@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tab2_text_liquids">
+        <item>將pH7校正液倒入校正座</item>
+        <item>將pH4校正液倒入校正座</item>
+        <item>將DO校正液倒入校正座</item>
+    </string-array>
+    <string-array name="tab2_text_waits">
+        <item>靜置10秒後按</item>
+        <item>靜置10秒後按</item>
+        <item>靜置60秒後按</item>
+    </string-array>
+    <string-array name="tab2_text_calibrations">
+        <item>pH7校正</item>
+        <item>pH4校正</item>
+        <item>DO校正</item>
+    </string-array>
+</resources>

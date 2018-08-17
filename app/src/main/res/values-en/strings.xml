@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Water Quality System</string>
+    <string name="tab_text_2">Calibration</string>
+    <string name="tab_text_4">Settings</string>
+    <string name="tab_text_3">Device</string>
+    <string name="tab_text_1">Monitor</string>
+    <string name="tab1_text_field">Field:</string>
+    <string name="tab1_text_add">Add</string>
+    <string name="tab1_text_delete">Del</string>
+    <string name="tab2_toast_disconnected">Bluetooth Fail</string>
+</resources>

@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">智慧水質監控管理系統</string>
+    <string name="tab_text_1">監測</string>
+    <string name="tab_text_2">校正</string>
+    <string name="tab_text_3">配置</string>
+    <string name="tab_text_4">設定</string>
+    <string name="tab1_text_field">場域選擇:</string>
+    <string name="tab1_text_value">參數選擇:</string>
+    <string name="tab1_text_interval">觀測時間:</string>
+    <string name="tab1_text_add">新增</string>
+    <string name="tab1_text_delete">刪除</string>
+    <string name="tab1_text_temperature">水溫</string>
+    <string name="tab1_text_pH" translatable="false">pH</string>
+    <string name="tab1_text_NH3" translatable="false">NH3</string>
+    <string name="tab1_text_DO" translatable="false">DO</string>
+    <string name="tab1_text_measure">量測值:</string>
+    <string name="tab1_text_30m" translatable="false">30m</string>
+    <string name="tab1_text_60m" translatable="false">60m</string>
+    <string name="tab1_text_8H" translatable="false">8H</string>
+    <string name="tab1_text_24H" translatable="false">24H</string>
+    <string name="tab2_text_step1">1.將pH7校正液倒入校正座</string>
+    <string name="tab2_text_step2">2.探棒插入校正座中</string>
+    <string name="tab2_text_step3">3.按後靜置10秒</string>
+    <string name="tab2_text_calibration">pH7校正</string>
+    <string name="tab2_text_skip">略過</string>
+    <string name="tab2_toast_connected">藍牙已連線</string>
+    <string name="tab2_toast_disconnected">藍牙配對失敗</string>
+    <string name="tab3_text_wifi_warn">※請開啟手機藍芽功能</string>
+    <string name="tab3_text_pairing">藍芽配對裝置</string>
+    <string name="tab3_text_wifi" translatable="false">Wifi ID:</string>
+    <string name="tab3_text_password">密碼:</string>
+    <string name="tab3_text_scene4">場域設定</string>
+    <string name="tab3_text_wifi_message">監測器WiFi設定</string>
+    <string name="tab3_edit_wifi_id_hint" translatable="false">SSID</string>
+    <string name="tab3_text_device_name">裝置名稱</string>
+    <string name="tab3_edit_device_name_hint">石斑</string>
+    <string name="tab3_edit_password_hint">密碼</string>
+    <string name="tab3_text_device">已連線裝置</string>
+    <string name="tab3_toast_bt_not_support">不支援藍牙</string>
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="tab4_text_back">返回</string>
+    <string name="tab4_text_delete">刪除當前場域</string>
+    <string name="tab4_text_add">新增場域:</string>
+    <string name="tab4_text_serial">輸入序號</string>
+    <string name="tab4_text_warn">安全值設定</string>
+    <string name="tab4_text_temp_set">水溫安全範圍</string>
+    <string name="tab4_text_pH_set">pH安全範圍</string>
+    <string name="tab4_text_NH3_set">NH3安全範圍 &lt;</string>
+    <string name="tab4_text_OD_set">OD安全範圍 ></string>
+    <string name="tab4_text_alarm_set">警報聲</string>
+    <string name="tab4_text_switch_open">開</string>
+    <string name="tab4_text_switch_close">關</string>
+    <string name="tab4_text_tilde" translatable="false">~</string>
+    <string name="tab4_text_temperature_low" translatable="false">25</string>
+    <string name="tab4_text_temperature_high" translatable="false">28</string>
+    <string name="tab4_text_ph_low" translatable="false">7.5</string>
+    <string name="tab4_text_ph_high" translatable="false">8.5</string>
+    <string name="tab4_text_ph4_low" translatable="false">0.03</string>
+    <string name="tab4_text_do_high" translatable="false">6.5</string>
+    <string name="tab4_text_switch_name" translatable="false">Switch</string>
+    <string name="tab1_text_alarm_field_name">警報場域名稱</string>
+    <string name="tab2_text_calibration_image_view_description">Calibration Flow</string>
+    <string name="tab1_text_connect_status_image_view_description">bluetooth status</string>
+    <string name="tab3_text_bluetooth_connect_status_description">bluetooth connect status</string>
+</resources>

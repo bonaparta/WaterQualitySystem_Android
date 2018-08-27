@@ -77,25 +77,27 @@ public class PollingService extends Service {
                             return;
                         }
                         float value = Float.parseFloat(result);
-                        if (value > limits.getTemperatureHigh() || value < limits.getTemperatureLow()) {
+                        if ((limits.getTemperatureHigh() != null && value > limits.getTemperatureHigh()) ||
+                                (limits.getTemperatureLow() != null && value < limits.getTemperatureLow())) {
                             mSoundPool.play(mSoundId, 1, 1, 0, 0, 1);
                             return;
                         }
                         result = getURL(limits.getThinkSpeakId(), WaterQualitySystem.THINK_SPEAK_LIQUID_PH7);
                         value = Float.parseFloat(result);
-                        if (value > limits.getPh7High() || value < limits.getPh7Low()) {
+                        if ((limits.getPh7High() != null && value > limits.getPh7High()) ||
+                                (limits.getPh7Low() != null && value < limits.getPh7Low())) {
                             mSoundPool.play(mSoundId, 1, 1, 0, 0, 1);
                             return;
                         }
                         result = getURL(limits.getThinkSpeakId(), WaterQualitySystem.THINK_SPEAK_LIQUID_PH4);
                         value = Float.parseFloat(result);
-                        if (value > limits.getPh4()) {
+                        if (limits.getPh4() != null && value > limits.getPh4()) {
                             mSoundPool.play(mSoundId, 1, 1, 0, 0, 1);
                             return;
                         }
                         result = getURL(limits.getThinkSpeakId(), WaterQualitySystem.THINK_SPEAK_LIQUID_DO);
                         value = Float.parseFloat(result);
-                        if (value < limits.getDoo()) {
+                        if (limits.getDoo() != null && value < limits.getDoo()) {
                             mSoundPool.play(mSoundId, 1, 1, 0, 0, 1);
                             return;
                         }

@@ -12,17 +12,17 @@ public class BoundaryDTO implements Serializable {
 
     private String thinkSpeakId;
 
-    private float temperatureHigh = 0;
+    private Float temperatureHigh;
 
-    private float temperatureLow = 0;
+    private Float temperatureLow;
 
-    private float ph7High = 0;
+    private Float ph7High;
 
-    private float ph7Low = 0;
+    private Float ph7Low;
 
-    private float ph4 = 0;
+    private Float ph4;
 
-    private float doo = 0;
+    private Float doo;
 
     public BoundaryDTO(String btMac, String thinkSpeakId) {
         this.btMac = btMac;
@@ -45,51 +45,51 @@ public class BoundaryDTO implements Serializable {
         this.thinkSpeakId = thinkSpeakId;
     }
 
-    public float getTemperatureHigh() {
+    public Float getTemperatureHigh() {
         return temperatureHigh;
     }
 
-    public void setTemperatureHigh(float temperatureHigh) {
+    public void setTemperatureHigh(Float temperatureHigh) {
         this.temperatureHigh = temperatureHigh;
     }
 
-    public float getTemperatureLow() {
+    public Float getTemperatureLow() {
         return temperatureLow;
     }
 
-    public void setTemperatureLow(float temperatureLow) {
+    public void setTemperatureLow(Float temperatureLow) {
         this.temperatureLow = temperatureLow;
     }
 
-    public float getPh7High() {
+    public Float getPh7High() {
         return ph7High;
     }
 
-    public void setPh7High(float ph7High) {
+    public void setPh7High(Float ph7High) {
         this.ph7High = ph7High;
     }
 
-    public float getPh7Low() {
+    public Float getPh7Low() {
         return ph7Low;
     }
 
-    public void setPh7Low(float ph7Low) {
+    public void setPh7Low(Float ph7Low) {
         this.ph7Low = ph7Low;
     }
 
-    public float getPh4() {
+    public Float getPh4() {
         return ph4;
     }
 
-    public void setPh4(float ph4) {
+    public void setPh4(Float ph4) {
         this.ph4 = ph4;
     }
 
-    public float getDoo() {
+    public Float getDoo() {
         return doo;
     }
 
-    public void setDoo(float doo) {
+    public void setDoo(Float doo) {
         this.doo = doo;
     }
 }

@@ -7,22 +7,22 @@ public class LimitDO {
     public String btMac = "";
 
     @SerializedName("temperature_high")
-    public float temperatureHigh = 0;
+    public Float temperatureHigh;
 
     @SerializedName("temperature_low")
-    public float temperatureLow = 0;
+    public Float temperatureLow;
 
     @SerializedName("ph7_high")
-    public float ph7High = 0;
+    public Float ph7High;
 
     @SerializedName("ph7_low")
-    public float ph7Low = 0;
+    public Float ph7Low;
 
     @SerializedName("ph4")
-    public float ph4 = 0;
+    public Float ph4;
 
     @SerializedName("do")
-    public float doo = 0;
+    public Float doo;
 
     @SerializedName("alarm")
     public boolean alarm = false;

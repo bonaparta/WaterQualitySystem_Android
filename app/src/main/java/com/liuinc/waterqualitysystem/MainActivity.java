@@ -645,12 +645,12 @@ public class MainActivity extends AppCompatActivity {
                 public void onClick(View v) {
                     LimitDO limits = new LimitDO();
                     limits.btMac = mSystemCore.getDevice();
-                    limits.temperatureLow = Float.parseFloat(edTextTmpLow.getText().toString());
-                    limits.temperatureHigh = Float.parseFloat(edTextTmpHigh.getText().toString());
-                    limits.ph7Low = Float.parseFloat(edTextPHLow.getText().toString());
-                    limits.ph7High = Float.parseFloat(edTextPHHigh.getText().toString());
-                    limits.ph4 = Float.parseFloat(edTextPH4.getText().toString());
-                    limits.doo = Float.parseFloat(edTextDO.getText().toString());
+                    limits.temperatureLow = edTextTmpLow.getText().length() == 0? null : Float.parseFloat(edTextTmpLow.getText().toString());
+                    limits.temperatureHigh = edTextTmpHigh.getText().length() == 0? null : Float.parseFloat(edTextTmpHigh.getText().toString());
+                    limits.ph7Low = edTextPHLow.getText().length() == 0? null : Float.parseFloat(edTextPHLow.getText().toString());
+                    limits.ph7High = edTextPHHigh.getText().length() == 0? null : Float.parseFloat(edTextPHHigh.getText().toString());
+                    limits.ph4 = edTextPH4.getText().length() == 0? null : Float.parseFloat(edTextPH4.getText().toString());
+                    limits.doo = edTextDO.getText().length() == 0? null : Float.parseFloat(edTextDO.getText().toString());
                     limits.alarm = swAlarm.isChecked();
                     mSystemCore.saveLimits(limits);
                     btn.setEnabled(false);
@@ -663,17 +663,17 @@ public class MainActivity extends AppCompatActivity {
             LimitDO limits = mSystemCore.getDeviceLimits(mSystemCore.getDevice());
 
             txtViewDevice.setText(mSystemCore.getDeviceReadName());
-            if(limits.temperatureLow != 0)
+            if(limits.temperatureLow != null)
                 edTextTmpLow.setText(String.valueOf(limits.temperatureLow));
-            if(limits.temperatureHigh != 0)
+            if(limits.temperatureHigh != null)
                 edTextTmpHigh.setText(String.valueOf(limits.temperatureHigh));
-            if(limits.ph7Low != 0)
+            if(limits.ph7Low != null)
                 edTextPHLow.setText(String.valueOf(limits.ph7Low));
-            if(limits.ph7High != 0)
+            if(limits.ph7High != null)
                 edTextPHHigh.setText(String.valueOf(limits.ph7High));
-            if(limits.ph4 != 0)
+            if(limits.ph4 != null)
                 edTextPH4.setText(String.valueOf(limits.ph4));
-            if(limits.doo != 0)
+            if(limits.doo != null)
                 edTextDO.setText(String.valueOf(limits.doo));
             swAlarm.setChecked(limits.alarm);
             return 0;
